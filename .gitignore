@@ -1,0 +1,6 @@
+*
+!.gitignore
+!*.c
+!.h
+!*.sql
+!qstr.control

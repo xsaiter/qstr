@@ -1,0 +1,7 @@
+# qstr extension
+comment = 'functions for PostgreSQL'
+default_version = '1.0'
+module_pathname = '$libdir/libqstr'
+relocatable = false
+schema = pg_catalog
+
