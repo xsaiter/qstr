@@ -83,8 +83,8 @@ q_str_levenshtein_distance(PG_FUNCTION_ARGS)
 {
     char *from = text_to_cstring(PG_GETARG_TEXT_PP(0));
     char *to = text_to_cstring(PG_GETARG_TEXT_PP(1));
-    int distance = levenshtein_distance(from, to);
-    PG_RETURN_INT32(distance);
+    int res = levenshtein_distance(from, to);
+    PG_RETURN_INT32(res);
 }
 
 Datum
@@ -92,8 +92,8 @@ q_str_least_to_palindrome(PG_FUNCTION_ARGS)
 {
     char *s = text_to_cstring(PG_GETARG_TEXT_PP(0));
     int len = strlen(s);
-    int least = least_to_palindrome(s, 0, len);
-    PG_RETURN_INT32(least);
+    int res = least_to_palindrome(s, 0, len);
+    PG_RETURN_INT32(res);
 }
 
 Datum
